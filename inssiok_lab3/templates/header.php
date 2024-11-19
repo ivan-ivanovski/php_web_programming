@@ -26,5 +26,4 @@
             <a href="/index.php" class="nav-item nav-link">Корисници</a>
 
         </nav>
-
     </div>
