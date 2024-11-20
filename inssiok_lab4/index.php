@@ -30,7 +30,7 @@
                     <td><?=$expense['expense_createdAt']?></td>
                     <td><?=$expense['expense_type']?></td>
                     <td>
-                        <a href="#update" class="btn btn-outline-secondary rounded-0">Update</a>
+                        <a href="/pages/edit.page.php?expenseId=<?=$expense['id']?>" class="btn btn-outline-secondary rounded-0">Update</a>
                         <?php if($expense['expense_price'] <= 100):?>
                             <a href="/actions/delete.action.php?expenseId=<?=$expense['id']?>" class="btn rounded-0 btn-outline-danger">Delete</a>
                         <?php endif;?>

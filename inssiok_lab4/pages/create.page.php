@@ -1,10 +1,11 @@
 <?php
     require_once "../config.php";
     require_once "../templates/header.php";
-    ?>
-<div class="container-fluid">
+?>
+<div class="container-fluid my-3">
     <h3>Add new expense form to table</h3>
     <form action="/actions/create.action.php" method="post" style="max-width: 500px;">
+
         <label for="name">Expense Name</label>
         <input type="text" id="name" name="expenseName" placeholder="Name for expense" class="form-control" required />
         <label for="date">Expense Date</label>
@@ -16,7 +17,7 @@
             <option value="cash" >Cash</option>
             <option value="card" >Card</option>
         </select>
-        <input type="submit" value="Add new expense" name="addNewExpenseBtn" aria-label="addNewExpenseBtn" id="addNewExpenseBtn" class="btn btn-outline-dark rounded-0"/>
+        <input type="submit" value="Add new expense" name="addNewExpenseBtn" aria-label="addNewExpenseBtn" id="addNewExpenseBtn" class="btn btn-outline-dark rounded-0 mt-3 mb-2"//>
     </form>
     <a href="/index.php">Back to index</a>
 </div>
