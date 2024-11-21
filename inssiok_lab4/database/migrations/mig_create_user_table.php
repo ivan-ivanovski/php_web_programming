@@ -11,8 +11,7 @@
     user_email TEXT NOT NULL UNIQUE,
     username TEXT NOT NULL UNIQUE,
     password TEXT NOT NULL, 
-    createdAt DATE DEFAULT CURRENT_TIMESTAMP
-);";
+    createdAt DATE DEFAULT CURRENT_TIMESTAMP );";
     if($conn->exec($sql)){
         echo "USPESNO KREIRANJE NA TABELA user";
     }

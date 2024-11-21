@@ -3,6 +3,14 @@
     require_once "../templates/header.php";
 ?>
 <div class="container my-3 mx-0 justify-content-center align-items-center">
+    <div style="600">
+        <?php if (isset($_SESSION['msg']['success'])): ?>
+            <div class="alert alert-success mt-3" role="alert">
+                <?php echo htmlspecialchars($_SESSION['msg']['success']); ?>
+            </div>
+            <?php unset($_SESSION['msg']['danger']); ?>
+        <?php endif; ?>
+    </div>
     <div class="card" style="width: 600px;">
         <div class="card-header">
             <h3>Login page</h3>
