@@ -13,7 +13,7 @@
             <a href="/index.php" class="nav-item nav-link fw-bold">Expanses</a>
         </nav>
         <nav class="nav">
-            <a href="#/login" class="nav-item nav-link fw-bold">Login</a>
-            <a href="#/login" class="nav-item nav-link fw-bold">Register</a>
+            <a href="/pages/login.page.php" class="nav-item nav-link fw-bold">Login</a>
+            <a href="/pages/register.page.php" class="nav-item nav-link fw-bold">Register</a>
         </nav>
     </nav>
