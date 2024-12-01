@@ -2,10 +2,12 @@
     require_once "config.php";
     include "templates/header.php";
     global $conn;
+    if(!isset($_SESSION['userId'])){
+        header('location:pages/login.page.php');
+    }
     $qry = "SELECT * FROM expenses";
     $stmp=$conn->prepare($qry);
     $expenses=$stmp->execute();
-
 ?>
 <div class="container-fluid">
     <h2>PHP web system for managing expenses </h2>

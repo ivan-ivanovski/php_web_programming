@@ -13,7 +13,12 @@
             <a href="/index.php" class="nav-item nav-link fw-bold">Expanses</a>
         </nav>
         <nav class="nav">
-            <a href="/pages/login.page.php" class="nav-item nav-link fw-bold">Login</a>
-            <a href="/pages/register.page.php" class="nav-item nav-link fw-bold">Register</a>
+            <?php if(isset($_SESSION['userId'])):?>
+                <a href="/pages/profile.page.php" class="nav-item nav-link fw-bold">Profile</a>
+                <a href="/actions/logout.action.php" class="nav-item nav-link fw-bold">Logout</a>
+            <?php else: ?>
+                <a href="/pages/login.page.php" class="nav-item nav-link fw-bold">Login</a>
+                <a href="/pages/register.page.php" class="nav-item nav-link fw-bold">Register</a>
+            <?php endif;?>
         </nav>
     </nav>

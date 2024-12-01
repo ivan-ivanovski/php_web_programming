@@ -1,9 +1,12 @@
 <?php
     include "../config.php";
     require_once "../templates/header.php";
+    if(isset($_SESSION['userId'])){
+        header("location:../index.php");
+    }
 ?>
-    <div class="container my-3 mx-0 justify-content-center align-items-center">
-        <div style="width: 600px">
+    <div class="container-fluid my-3 mx-auto justify-content-center align-items-center" style="width: 478px">
+        <div style="width: 100%">
             <?php if (isset($_SESSION['msg']['danger'])): ?>
                 <div class="alert alert-danger mt-3" role="alert">
                     <?php echo htmlspecialchars($_SESSION['msg']['danger']); ?>
@@ -11,7 +14,7 @@
                 <?php unset($_SESSION['msg']['danger']); ?>
             <?php endif; ?>
         </div>
-        <div class="card" style="width: 600px;">
+        <div class="card" style="width: 100%">
             <div class="card-header">
                 <h3>Register page</h3>
             </div>
