@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inssiok Lab4</title>
     <link rel="stylesheet" href='/static/css/bootstrap.min.css'>
+
 </head>
-<body>
-    <nav class="container-fluid navbar navbar-expand-lg justify-content-between bg-light">
+<body data-bs-theme="light">
+    <nav class="container-fluid navbar navbar-expand-lg justify-content-between bg-light" data-bs-theme="light">
         <nav class="nav">
             <a href="/index.php" class="nav-item nav-link fw-bold">Expanses</a>
         </nav>

@@ -33,7 +33,7 @@
                         <label for="password" class="w-25">Password</label>
                         <input type="password" name="password" id="password" placeholder="Your password" class="form-control" required>
                     </div>
-                    <p class="d-block mb-2">Don't know you password, or you have forgotten it. <a href="#../actions/password.reset.php" class="text-danger-emphasis">Reset now</a></p>
+                    <p class="d-block mb-2">Don't know you password, or you have forgotten it. <a href="../pages/reset-password.page.php" class="text-danger-emphasis">Reset now</a></p>
                 </div>
                 <div class="d-flex flex-column my-1">
                     <input type="submit" class="btn btn-outline-primary text-primary-emphasis d-block mb-2" value="Login now" style="width: 200px;">
